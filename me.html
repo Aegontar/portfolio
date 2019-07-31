@@ -1,0 +1,174 @@
+<html>
+
+<style>
+
+body {
+
+margin: 0;
+line-height: 10;
+overflow-y: ;
+
+}
+
+* {
+box-sizing: border-box;
+}
+
+video {
+
+width:100%;
+height: auto;
+
+}
+
+.fullscreen-video-wrap {
+
+position: absolute;
+top: 0;
+left: 0;
+
+
+
+}
+
+.header-overlay {
+
+height: 800px;
+width: 100%;
+position: absolute;
+top: 0;
+left: 0;
+background: black;
+opacity: 0.8;
+z-index: 1;
+
+}
+
+.header-content {
+background: green;
+position: absolute;
+z-index: 10;
+color: red;
+}
+
+#sec1 {
+position: absolute;
+z-index: 15;
+background: blue;
+height: 200px;
+width: 300px;
+left: 800px;
+top: 280px;
+color: white;
+}
+
+#sec1 p {
+
+position: absolute;
+left: 20px;
+
+}
+
+#sec2 {
+
+background: url("div-background.jpg");
+position: absolute;
+z-index: 15;
+height: 200px;
+width: 300px;
+left: 300px;
+top: 280px;
+
+}
+
+
+
+#sec1 {
+animation-name: a2;
+animation-duration: 2s;
+}
+@keyframes a2 {
+  from {
+    position: absolute;
+    left: 1500px;
+    top: 280px;
+}
+to {
+    position: absolute;
+    left: 800px;
+    top: 280px;
+  }
+}
+
+#sec2 {
+animation-name: a1;
+animation-duration: 2s;
+}
+@keyframes a1 {
+  from {
+    position: absolute;
+    left: -300px;
+    top: 280px;
+}
+to {
+    position: absolute;
+    left: 300px;
+    top: 280px;
+  }
+}
+
+
+
+
+
+#sec2 h1 {
+
+position: absolute;
+left: 90px;
+bottom: -80px;
+color: white;
+
+
+}
+
+</style>
+
+
+<title>video background</title>
+
+<head>
+
+</head>
+
+<body>
+
+<header class="v-header container" > </header>
+
+<div class="fullscreen-video-wrap">
+
+  <video autoplay muted loop>
+
+   <source src="star.mp4" type="video/mp4"  >
+
+  </video>
+
+</div>
+
+<div class="header-overlay"> </div>
+
+<div class="header-content">
+
+
+
+<div id="sec1"><p>To do list is  under construction...</p></div>
+
+<a href="https://frosty-wing-988155.netlify.com/index.html" target="blank_"><div id="sec2"><h1>My blog</h1> </div></a>
+
+
+</body>
+
+
+
+
+
+</html>
